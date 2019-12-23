@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="container bg-white p-0">
+    <div class="container-fluid bg-white p-0">
         @include('section.header')
         @yield('content')
         @include('section.footer')

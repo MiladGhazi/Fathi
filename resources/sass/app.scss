@@ -2,84 +2,42 @@
 @import "./bootstrap.rtl.min.css";
 
 // Heights
-.he385 {
-    height: 385px;
+.he60header {
+    height: 60px;
 }
-.he80 {
-    height: 80px;
-}
-.he300 {
+.he300main {
     height: 300px;
 }
-.he5 {
-    height: 5px;
+.he800main{
+    height: 800px;
 }
-.he320{
-    height: 400px;
-}
-.he1785{
-    height: 1785px;
-}
-.he700{
-    height: 700px;
-}
-.he400{
-    height: 400px;
-}
-.h-90{
-    height: 90%;
+.he170footer {
+    height: 170px;
 }
 // Opacity
 .opa1{
     opacity: 0.1;
 }
 // Body Styles
-body{
-    background-image: url(../images/bgpattern.jpg);
-    background-repeat: repeat;
-}
 
 //Header Styles
 li.navhoverbutton:hover {
-    background-color: orange;
-}
-.bgheader {
-    background-image: url("../images/bgheader.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-color: #001b25  ;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
 }
 
 // Content Styles
-.bgslider{
-    background-image: url('../images/bgslider.jpg');
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.stmainslider{
+    background-color: #151515;
 }
-
 // Footer Styles
-.footercolor{
-    background-color: #383838;
+.stfooter{
+    background-color: #060606;
 }
-.iranmap {
-    background-image: url("../images/iranmap.png");
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+li.footerhoverbutton:hover {
+    color: #FF6720;
 }
-.sizeiranmap{
-    height: 150px;
-    width: 160px;
-}
-div.iranmap:hover{
-    opacity: 0.3;
+span.footerhoverbutton:hover {
+    color: rgb(255, 255, 255);
 }
