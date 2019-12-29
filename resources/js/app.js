@@ -1,2 +1,3 @@
-require('./bootstrap');
-require('./bootstrap.min')
+require("./bootstrap");
+require("./bootstrap.min");
+

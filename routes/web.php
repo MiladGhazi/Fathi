@@ -7,8 +7,14 @@ Route::get('panel/dashboard', function () {
 // Route::group(['namespace'=> 'Admin','prefix'=>'panel'],function(){
 //     Route::get('/dashboard','AdminController@index')->name('panel');
 // });
-Route::get('/', function () {
+Route::get('', function () {
     return view('Content.mainpage');
+});
+Route::get('category', function () {
+    return view('Content.category');
+});
+Route::get('product', function () {
+    return view('Content.product');
 });
 
 Route::get('/callwithus', function () {

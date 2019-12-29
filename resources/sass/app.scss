@@ -1,43 +1,215 @@
 @import "./bootstrap.min.css";
 @import "./bootstrap.rtl.min.css";
 
-// Heights
+//****************** Iransans Font ********************//
+
+/**
+*
+*	Name:			IRAN Sans-Serif Font
+*	Version:		5.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 25, 2012
+*	Updated on:		Sep 01, 2017
+*	Website:		             http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت های ایران سن سریف یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRAN Sans-serif fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+--------------------------------------------------------------------------------------
+*
+**/
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 900;
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_Black.eot');
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('./fonts/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('./fonts/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('./fonts/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('./fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('./fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('./fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('./fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('./fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('./fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_Light.eot');
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('./fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('./fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('./fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+	src: url('./fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('./fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('./fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('./fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('./fonts/eot/IRANSansWeb(FaNum).eot');
+	src: url('./fonts/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('./fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('./fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('./fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+//****************** Iransans Font End ********************//
+
+//****************** Body Styles ********************//
+
+body{font-family: IRANSans;font-weight: 300; direction: rtl; text-align: right; padding: 0; margin: 0;
+    background: #f7f8fa;}
+
+//****************** Body Styles End ********************//
+
+//****************** Header Styles ********************//
+
 .he60header {
     height: 60px;
 }
-.he300main {
-    height: 300px;
+a.nav-link{
+    color: #000000 !important;
 }
-.he800main{
-    height: 800px;
+a.nav-link:hover{
+    color: white !important;
 }
-.he170footer {
-    height: 170px;
-}
-// Opacity
-.opa1{
-    opacity: 0.1;
-}
-// Body Styles
-
-//Header Styles
 li.navhoverbutton:hover {
-    background-color: #001b25  ;
+    background-color: #001b25;
     color: rgb(255, 255, 255);
     border-radius: 3px;
 }
 
-// Content Styles
-.stmainslider{
-    background-color: #151515;
+//****************** Header Styles End ********************//
+
+
+//****************** Content Styles ********************//
+
+// Main Page
+.he300main {
+    height: 300px;
 }
-// Footer Styles
-.stfooter{
+.he800main {
+    height: 800px;
+}
+.he700main {
+    height: 700px;
+}
+.mainimgcontent {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    font-size: larger;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgba(121, 121, 121, 0.3);
+}
+.wideimgcontent {
+    position: absolute;
+    top: 65%;
+    right: 5%;
+    font-size: larger;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: rgba(121, 121, 121, 0.3);
+}
+.rsmallimgcontent {
+    position: absolute;
+    top: 72%;
+    right: 8%;
+    font-size: larger;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgba(121, 121, 121, 0.3);
+}
+.lsmallimgconten {
+    position: absolute;
+    top: 72%;
+    right: 8%;
+    font-size: larger;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgba(121, 121, 121, 0.3);
+}
+.right3imgcontent {
+    position: absolute;
+    top: 80%;
+    right: 8%;
+    font-size: larger;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(121, 121, 121, 0.3);
+}
+.center3imgcontent {
+    position: absolute;
+    top: 80%;
+    right: 8%;
+    font-size: larger;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(121, 121, 121, 0.3);
+}
+.left3imgcontent {
+    position: absolute;
+    top: 80%;
+    right: 8%;
+    font-size: larger;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(121, 121, 121, 0.3);
+}
+// Category Page
+.he250category {
+    height: 250px;
+}
+.he50category {
+    height: 50px;
+}
+.he1550category {
+    height: 1550px;
+}
+
+//****************** Content Styles End ********************//
+
+//****************** Footer Styles ********************//
+.he170footer {
+    height: 170px;
+}
+.stfooter {
     background-color: #060606;
 }
 li.footerhoverbutton:hover {
-    color: #FF6720;
+    color: #ff6720;
 }
 span.footerhoverbutton:hover {
     color: rgb(255, 255, 255);
 }
+//****************** Footer Styles End ********************//

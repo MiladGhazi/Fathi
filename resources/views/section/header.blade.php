@@ -1,6 +1,12 @@
-<nav class="container p-0">
-    <div class="col-12 mt-5">
+<div class="container p-0 pt-5">
+    <div class="col-12">
         <div class="row">
+            <div class="col-2 pt-1 pl-4">
+                <img src="{{ asset('icon/iconsmenu.svg') }}" alt="" width="32" height="32" title="Bootstrap">
+            </div>
+            <div class="col-8">
+                <h3 class="text-danger text-center">چیانا رود</h3>
+            </div>
             <div class="col-2 pl-0">
                 <form>
                     <div class="form-group">
@@ -8,46 +14,42 @@
                     </div>
                 </form>
             </div>
-            <div class="col-9">
-                <div class="col-3 h3 text-danger offset-4 pr-5">Cooding</div>
-            </div>
-            <div class="col-1 pr-0">|||</div>
         </div>
-        <div class="row">
-            <div class="col-12 heheader60">
-                <ul class="nav justify-content-center w-100">
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته یک
+        <nav class="navbar navbar-expand navbar-light p-0">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto p-0">
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته یک</a>
                     </li>
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته دو
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته دو</a>
                     </li>
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته سه
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته سه</a>
                     </li>
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته چهار
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته چهار</a>
                     </li>
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته پنج
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته پنج</a>
                     </li>
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته شش
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته شش</a>
                     </li>
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته هفت
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته هفت</a>
                     </li>
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته هشت
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته هشت</a>
                     </li>
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته نه
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته نه</a>
                     </li>
-                    <li class="nav-item p-3 navhoverbutton">
-                        دسته ده
+                    <li class="nav-item navhoverbutton">
+                        <a class="nav-link w-100 h-100 p-3" href="">دسته ده</a>
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </div>
-</nav>
+</div>
